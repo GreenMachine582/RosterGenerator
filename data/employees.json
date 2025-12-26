@@ -1,0 +1,33 @@
+[
+  { "emp_id": "E1", "name": "Employee 1", "role": "PARAMEDIC", "title": "PARA_SPEC", "years_experience": 1, "preferred_lines": [3] },
+  { "emp_id": "E2", "name": "Employee 2", "role": "PARAMEDIC", "title": "PARA", "years_experience": 2 },
+
+  { "emp_id": "E3", "name": "Employee 3", "role": "ICP", "title": "PARA_SPEC", "years_experience": 1, "line_id": 3 },
+  { "emp_id": "E4", "name": "Employee 4", "role": "ICP", "title": "PARA_SPEC", "years_experience": 1 },
+  { "emp_id": "E5", "name": "Employee 5", "role": "ICP", "title": "PARA_SPEC", "years_experience": 3 },
+
+  { "emp_id": "E6", "name": "Employee 6", "role": "PARAMEDIC", "title": "PARA", "years_experience": 1 },
+  { "emp_id": "E7", "name": "Employee 7", "role": "PARAMEDIC", "title": "PARA", "years_experience": 4 },
+  { "emp_id": "E8", "name": "Employee 8", "role": "PARAMEDIC", "title": "PARA", "years_experience": 2, "avoid_lines": [4] },
+  { "emp_id": "E9", "name": "Employee 9", "role": "PARAMEDIC", "title": "PARA", "years_experience": 1 },
+  { "emp_id": "E10", "name": "Employee 10", "role": "PARAMEDIC", "title": "PARA", "years_experience": 1 },
+  { "emp_id": "E11", "name": "Employee 11", "role": "PARAMEDIC", "title": "PARA", "years_experience": 1 },
+
+  { "emp_id": "E12", "name": "Employee 12", "role": "PARAMEDIC", "title": "PARA", "years_experience": 6 },
+  { "emp_id": "E13", "name": "Employee 13", "role": "PARAMEDIC", "title": "PARA_SPEC", "years_experience": 3, "is_ecp": true },
+  { "emp_id": "E14", "name": "Employee 14", "role": "PARAMEDIC", "title": "PARA", "years_experience": 1 },
+  { "emp_id": "E15", "name": "Employee 15", "role": "PARAMEDIC", "title": "PARA_SPEC", "years_experience": 1 },
+  { "emp_id": "E16", "name": "Employee 16", "role": "PARAMEDIC", "title": "MGR", "years_experience": 1 },
+  { "emp_id": "E17", "name": "Employee 17", "role": "PARAMEDIC", "title": "PARA", "years_experience": 1 },
+  { "emp_id": "E18", "name": "Employee 18", "role": "PARAMEDIC", "title": "PARA", "years_experience": 4 },
+  { "emp_id": "E19", "name": "Employee 19", "role": "PARAMEDIC", "title": "PARA", "years_experience": 2 },
+  { "emp_id": "E20", "name": "Employee 20", "role": "PARAMEDIC", "title": "PARA", "years_experience": 2 },
+
+  { "emp_id": "E21", "name": "Employee 21", "role": "INTERN", "title": "PARA_INTERN", "years_experience": 2 },
+  { "emp_id": "E22", "name": "Employee 22", "role": "INTERN", "title": "PARA_INTERN", "years_experience": 2 },
+  { "emp_id": "E23", "name": "Employee 23", "role": "INTERN", "title": "PARA_INTERN", "years_experience": 2 },
+  { "emp_id": "E24", "name": "Employee 24", "role": "INTERN", "title": "PARA_INTERN", "years_experience": 2 },
+  { "emp_id": "E25", "name": "Employee 25", "role": "INTERN", "title": "PARA_INTERN", "years_experience": 2 },
+  { "emp_id": "E26", "name": "Employee 26", "role": "INTERN", "title": "PARA_INTERN", "years_experience": 2 },
+  { "emp_id": "E27", "name": "Employee 27", "role": "INTERN", "title": "PARA_INTERN", "years_experience": 2 }
+]

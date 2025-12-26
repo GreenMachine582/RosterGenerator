@@ -1,0 +1,11 @@
+[
+  { "line_id": 1, "offset": 0, "max_headcount": 4 },
+  { "line_id": 2, "offset": 2, "max_headcount": 3 },
+  { "line_id": 3, "offset": 4, "max_headcount": 4 },
+  { "line_id": 4, "offset": 6, "max_headcount": 3 },
+  { "line_id": 5, "offset": 8, "max_headcount": 3 },
+  { "line_id": 6, "offset": 10, "max_headcount": 3 },
+  { "line_id": 7, "offset": 12, "max_headcount": 4 },
+  { "line_id": 8, "offset": 14, "max_headcount": 4 },
+  { "line_id": 9, "offset": 16, "max_headcount": 4 }
+]

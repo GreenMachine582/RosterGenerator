@@ -1,0 +1,25 @@
+{
+  "coverage": {
+    "target_staff": 7,
+    "weight": 1.0
+  },
+
+  "line_preferences": {
+    "preferred_line": 1.0,
+    "avoid_line": 1.0
+  },
+
+  "coworkers": {
+    "should_work_with": 1.0,
+    "should_not_work_with": 1.0
+  },
+
+  "synergy": {
+    "enabled": false,
+    "weights": {
+      "role_mix": 0.0,
+      "experience_balance": 0.0,
+      "ecp_presence": 0.0
+    }
+  }
+}

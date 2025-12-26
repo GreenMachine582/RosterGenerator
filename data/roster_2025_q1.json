@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "weeks": 9,
+    "generated_at": "2025-12-26T01:22:24.138451Z"
+  },
+  "lines": [
+    {
+      "line_id": 1,
+      "employees": [
+        "E20",
+        "E11",
+        "E17",
+        "E16"
+      ]
+    },
+    {
+      "line_id": 2,
+      "employees": [
+        "E7",
+        "E25",
+        "E26"
+      ]
+    },
+    {
+      "line_id": 3,
+      "employees": [
+        "E2",
+        "E1",
+        "E13",
+        "E18"
+      ]
+    },
+    {
+      "line_id": 4,
+      "employees": [
+        "E5",
+        "E23"
+      ]
+    },
+    {
+      "line_id": 5,
+      "employees": [
+        "E21",
+        "E6"
+      ]
+    },
+    {
+      "line_id": 6,
+      "employees": [
+        "E27",
+        "E12"
+      ]
+    },
+    {
+      "line_id": 7,
+      "employees": [
+        "E22",
+        "E19",
+        "E8"
+      ]
+    },
+    {
+      "line_id": 8,
+      "employees": [
+        "E4",
+        "E14",
+        "E9"
+      ]
+    },
+    {
+      "line_id": 9,
+      "employees": [
+        "E15",
+        "E10",
+        "E24"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+cff-version: "0.0.1"
+date-released: 2025-12
+message: "If you use this software, please cite it using these metadata."
+title: "RosterGenerator: engine designed to automatically assign employees to operational lines/shifts while respecting hard constraints, soft preferences, and scoring heuristics."
+url: "https://github.com/GreenMachine582/RosterGenerator"
+authors:
+  - family-names: Johnson
+    given-names: Matthew
