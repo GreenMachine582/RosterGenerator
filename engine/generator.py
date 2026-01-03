@@ -69,8 +69,8 @@ class RosterGenerator:
         # Seed pre-assigned
         for e in employees:
             if e.assigned_line_id and e.assigned_line_id in self.lines:
-                employees_by_line[e.line_id].append(e)
-                resolved_line_by_emp[e.emp_id] = e.line_id
+                employees_by_line[e.assigned_line_id].append(e)
+                resolved_line_by_emp[e.emp_id] = e.assigned_line_id
 
         used = {lid: len(employees_by_line.get(lid, [])) for lid in self.lines}
         cap = {lid: self.lines[lid].max_headcount for lid in self.lines}

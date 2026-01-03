@@ -81,7 +81,7 @@ def load_employees(path: Path) -> List[Employee]:
                 should_work_with=frozenset(row.get("should_work_with", [])),
                 should_not_work_with=frozenset(row.get("should_not_work_with", [])),
 
-                assigned_line_id=row.get("line_id", 0),
+                assigned_line_id=row.get("assigned_line_id", 0) or row.get("line_id", 0),
                 preferred_lines=frozenset(row.get("preferred_lines", [])),
                 avoid_lines=frozenset(row.get("avoid_lines", [])),
             )
