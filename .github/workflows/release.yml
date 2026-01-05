@@ -25,18 +25,24 @@ jobs:
         shell: pwsh
         run: .\scripts\build_windows.ps1
 
-      # Install Inno Setup (for installer build)
-      - name: Install Inno Setup
+      - name: Ensure Inno Setup is available
         shell: pwsh
         run: |
-          choco install innosetup -y
+          $iscc = (Get-Command iscc -ErrorAction SilentlyContinue)
+          if (-not $iscc) {
+            Write-Host "Inno Setup not found; installing via Chocolatey..."
+            choco upgrade innosetup -y --no-progress
+          } else {
+            Write-Host "Inno Setup already available at: $($iscc.Source)"
+          }
           iscc /?
 
-      # Compile the installer from your .iss script
       - name: Build installer (Inno Setup)
         shell: pwsh
         run: |
-          # Compile to /dist (or whatever output you configure in the .iss)
+          if (!(Test-Path ".\installer\windows\roster_generator.iss")) {
+            throw "Missing installer script: installer/windows/roster_generator.iss"
+          }
           iscc .\installer\windows\roster_generator.iss
 
       - name: Upload to GitHub Release
@@ -44,6 +50,6 @@ jobs:
         with:
           generate_release_notes: true
           files: |
-            dist/RosterGenerator-Setup.exe
+            dist/RosterGenerator-Setup/RosterGenerator-Setup.exe
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
