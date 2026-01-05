@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "roster-generator"
+description = "Roster Generator - engine designed to automatically assign employees to operational lines/shifts while respecting hard constraints, soft preferences, and scoring heuristics."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.14"
+authors = [
+  { name = "Matt Johnson" }
+]
+keywords = ["tkinter", "roster", "scheduler", "desktop-app"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Office/Business :: Scheduling",
+]
+
+dependencies = []
+
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/GreenMachine582/RosterGenerator"
+Issues = "https://github.com/GreenMachine582/RosterGenerator/issues"
+
+# Optional extras for packaging and dev tooling
+[project.optional-dependencies]
+build = [
+  "pyinstaller>=6.0",
+]
+dev = [
+  "ruff>=0.6",
+  "pytest>=8.0",
+]
+
+# A convenient CLI entry point (optional but useful for packaging later)
+[project.scripts]
+roster-app = "roster_generator.app:main"
+
+[tool.hatch.version]
+path = "src/roster_generator/version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/roster_generator"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
